@@ -20,13 +20,18 @@ class GildedRose {
                 if (items[i].quality < 50) {
                     items[i].quality = items[i].quality + 1;
 
+                    //improved the readability of this section 
                     if (items[i].name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+                        //combined the two if statements into one 
                         if (items[i].sellIn < 11 && items[i].quality < 50) {
                                 items[i].quality++;
+                                //edited this to be a ++ instead of adding onto itself. 
                         }
+
                         if (items[i].sellIn < 6 && items[i].quality < 50) {
+                            //similar as above
                             if (items[i].quality < 50) {
-                                items[i].quality = items[i].quality + 1;
+                                items[i].quality++;
                             }
                         }
                     }
